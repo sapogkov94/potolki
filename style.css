@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'FuturaBook';
+    src: url(/fonts/FuturaPT-Book.ttf);
+}
+@font-face {
+    font-family: 'FuturaDemi';
+    src: url(/fonts/FuturaPT-Demi.ttf);
+}
+.header {
+    background: url(/img/bd.png) no-repeat center top;
+}
+h1 {
+    font-family: 'FuturaDemi';
+    font-size: 48px;
+    padding-bottom: 20px;
+    margin: 0;
+}
+.container {
+    width: 1501px;
+    margin: 235px auto;
+}
+.calc{
+    display: flex;
+}
+.rooms {
+    font-family: 'FuturaBook';
+    font-size: 18px;
+    display: flex;
+    display: flex;
+    align-items: center;
+}
+.rooms :hover {
+    background-color:rgba(183, 186, 203, 0.2);
+    cursor: pointer;
+}
+#first {
+    width: 131px;
+    height: 60px;
+    justify-content: center;
+}
+#plus { 
+    width: 204px;
+    height: 60px;
+    justify-content: center;
+}
+.icon {
+    margin-right: 5px;
+}
+.calculation{
+    width: 701px;
+    height: 481px;
+    background-color: #fff;
+}
+.foto {
+    width: 800px;
+    height: 481px;
+}
+.m2 {
+    font-size: 18px;
+    
+  }
+.sht {
+    position: absolute;
+    margin-left: -80px;
+    font-size: 18px;
+  }
+.spin {
+    font-family: 'FuturaBook';
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 41px;
+    margin-right: 40px;
+}
+.spinner {
+    width: 295px;
+    height: 60px;
+    display: block;
+    background-color: rgba(183, 186, 203, 0.2);
+}
+button {
+    background-color: rgba(183, 186, 203, 0.4);
+    border: 0px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin: 10px;
+    padding: 0;
+
+}
+.plus {
+    margin-left: 64px;
+}
+#minusPng {
+    margin-bottom: 3px;
+}
+input {
+    width: 160px;
+    border-style: none;
+    background-color: rgba(183, 186, 203, 0);
+    text-align: center;
+    margin-right: -70px;
+    padding: 0;
+}
+.selection {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    background-color: rgba(183, 186, 203, 0.2);
+    width: 295px;
+    height: 60px;
+    padding: 19px 50px 18px 10px;
+    cursor: pointer;
+
+}
+.select-wrapper {
+    position: relative;
+}
+.select-wrapper::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #BF3266;
+    position: absolute;
+    margin: 10px 10px 10px 245px;
+    pointer-events: none;
+}
+.select {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 41px;
+    margin-right: 40px;
+    font-family: 'FuturaBook';
+    font-size: 18px;
+}
+.selection::-ms-expand {
+    display: none;
+}
+.vector {
+    position: absolute;
+    margin: 26.33px 25.96px 26.33px 258.25px;
+    pointer-events: none;
+}
+.text {
+    font-family: 'FuturaDemi';
+    font-size: 36px;
+    margin-left: 41px;
+    color: #333333;
+}
+.minitext {
+    font-family: 'FuturaBook';
+    font-size: 18px;
+}
+#sum {
+    color: #BF3266;
+}
+.buttons {
+    display: flex;
+    margin-left: 41px;
+    margin-right: 40px;
+    font-family: 'FuturaBook';
+    font-size: 18px;
+}
+.button {
+    width: 232px;
+    height: 60px;
+    font-family: 'FuturaDEMI';
+    font-size: 18px;
+    color: #BF3266;
+    background-color: #fff;
+    border: 1px solid #BF3266;
+    border-radius: 4px;
+    margin: 0;
+}
+#skachat {
+    margin-left: 35px;
+}
+.button:hover {
+    color: #fff;
+    background-color: #BF3266;
+}
+.bb {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    background-color: black;
+    border-radius: 0px 4px 0px 0px;
+    position: absolute;
+    margin: 0;
+    margin-left: 207px;
+}

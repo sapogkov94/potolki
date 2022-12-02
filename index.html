@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/js/jquery-ui-1.13.2.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="/js/jquery-ui-1.13.2.custom/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="/js/jquery-ui-1.13.2.custom/jquery-ui.structure.min.css">
+    <title>Потолки</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <h1>Расчитайте стоимость Вашего потолка онлайн!</h1>
+        <div class="rooms">
+            <div class="rooms" id="first">
+                <p>Комната №1</p>
+            </div>
+            <div class="rooms" id="plus">
+                <iconify-icon class="icon" icon="ant-design:plus-circle-outlined"></iconify-icon>
+                <p>Добавить комнату</p>
+            </div>
+        </div>
+        <section class="calc">
+            <div class="calculation">
+                <div class="spin">
+                    <div class="square">
+                        <p>Площадь помещения:</p>
+                        <div class="spinner">
+                            <button class="minus"><img id="minusPng" src="/img/minus.png" alt=""></button> 
+                            <input id="calcsquare" value="1" oninput="this.parentElement.dataset.val = this.value"></span>м<sup>2</sup></label>
+                            <button class="plus"><img src="/img/plus.png" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="corner">
+                        <p>Количество углов:</p>
+                        <div class="spinner">
+                            <button class="minus"><img id="minusPng" src="/img/minus.png" alt=""></button> 
+                            <input id="calccorner" value="1" oninput="this.parentElement.dataset.val = this.value"></span>шт.</label>
+                            <button class="plus"><img src="/img/plus.png" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="select">
+                        <div class="factura">
+                            <p>Фактура потолка:</p>
+                            <div class="select-wrapper">
+                                <img class="vector" src="/img/Vector.png" alt="">
+                                <select class="selection" name="factura" id="material">
+                                    <option selected="selected" value="990">ПВХ</option>
+                                    <option value="1850">Тканевый</option>
+                                </select>
+                            </div> 
+                        </div>
+                        <div>
+                            <div class="factura">
+                                <p>Цвет потолка:</p>
+                                <div class="select-wrapper">
+                                    <img class="vector" src="/img/Vector.png" alt="">
+                                    <select class="selection" name="colored" id="color">
+                                        <option selected="selected" value="400">Белый</option>
+                                        <option value="610">Цветной</option>
+                                    </select>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="text">
+                    <p>Итого: <span id="sum">0</span> руб. <span class="minitext">(Ориентировочная стоимость)</span></p>
+                </div>
+                <div class="buttons">
+                    <button class="button" id="zakaz">
+                        <p>ОФОРМИТЬ ЗАКАЗ</p>
+                        <button class="bb">?</button>
+                    </button>
+                    <button class="button" id="skachat">СКАЧАТЬ СМЕТУ</button>
+                </div>
+            </div>
+            <img class="foto" src="/img/foto.png" alt="">
+        </section>
+    </div>
+</header>
+<script src="/js/jquery-3.6.1.min.js"></script>
+<script src="/js/jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
+<script src="/js/jquery-ui-1.13.2.custom/"></script>
+<script src="/js/main.js"></script> 
+<script>
+function raschet(){
+var ploshad = document.getElementById(calcsquare).value;
+var ugol = document.getElementById(calccorner).value;
+var factura = document.getElementById(material).value;
+var cvet = document.getElementById(color).value;
+var mkv = parseFloat(factura) + parseFloat(cvet);
+var sum = (mkv*parseFloat(ploshad))+(100*parseFloat(ugol));
+document.getElementById(sum).innerHTML = sum;
+}
+</script>  
+</body>
+</html>
